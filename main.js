@@ -28,11 +28,16 @@ client.on('message', message => {
   } else if (message.content.startsWith(`${PREFIX}telegram`)) {
 	  message.channel.send("https://t.me/bonbiwaffen");
   } else if (message.content.startsWith(`${PREFIX}help`)) {
-	  message.channel.send("Bonbiwaffen Discord Bot"\n"`!bonkers telegram`"\n"`!bonkers tiktok`"\n"`!bonkers based`");
+	  message.channel.send("Bonbiwaffen Discord Bot"\n"`!bonkers telegram`"\n"`!bonkers tiktok`"\n"`!bonkers based`"\n"`!bonkers spam`");
   } else if (message.content.startsWith(`${PREFIX}tiktok`)) {
 	  message.channel.send("https://www.tiktok.com/@bonbibonkers");
   } else if (message.content.startsWith(`${PREFIX}based`)) {
 	  message.channel.send("http://4chan.org/board/pol/catalog");
+  } else if (message.content.startsWith(`${PREFIX}spam`)) {
+	  for (int i = 0; i < 10; i++) {
+	  	message.channel.send("https://bitwave.tv/codcomedytj247");
+		message.channel.send("xD");
+	  }
 });
 
 client.login(TOKEN);

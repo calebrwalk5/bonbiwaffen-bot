@@ -36,7 +36,7 @@ client.on('message', message => {
   } else if (message.content.startsWith(`${PREFIX}spam`)) {
 	  for (int i = 0; i < 10; i++) {
 	  	message.channel.send("https://bitwave.tv/codcomedytj247");
-		message.channel.send("xD");
+		message.channel.send("https://bitwave.tv/owo");
 	  }
   } else {
   	return;

@@ -1,8 +1,13 @@
-const client = new Discord.Client({partials: ['MESSAGE', 'CHANNEL', 'REACTION']});
 const Discord = require('discord.js');
+const client = new Discord.Client({partials: ['MESSAGE', 'CHANNEL', 'REACTION']});
 const PREFIX = "!bonkers ";
 const TOKEN = "token-here";
 const JELLY = "328731272497201154";
+
+/*
+Discord bot by anusO1#6969 for alex, a bonnie bonkers simp
+Alex is a huge simp lmao, you will never date her
+*/
 
 client.on('ready', ready => {
   console.log("ready");
@@ -16,9 +21,18 @@ client.on('message', message => {
     message.channel.send("he is fake based");
   } else if (message.author.id === JELLY) {
 	  console.log("jelly sent a message");
+	  message.channel.send("fake based");
   } else if (message.content.startsWith(`${PREFIX}ban ashton`)) {
-  guild.members.ban(`${JELLY}`);
-  console.log("banned.");
+	  guild.members.ban(`${JELLY}`);
+	  console.log("banned.");
+  } else if (message.content.startsWith(`${PREFIX}telegram`)) {
+	  message.channel.send("https://t.me/bonbiwaffen");
+  } else if (message.content.startsWith(`${PREFIX}help`)) {
+	  message.channel.send("Bonbiwaffen Discord Bot"\n"`!bonkers telegram`"\n"`!bonkers tiktok`"\n"`!bonkers based`");
+  } else if (message.content.startsWith(`${PREFIX}tiktok`)) {
+	  message.channel.send("https://www.tiktok.com/@bonbibonkers");
+  } else if (message.content.startsWith(`${PREFIX}based`)) {
+	  message.channel.send("");
 });
 
 client.login(TOKEN);

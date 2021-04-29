@@ -6,14 +6,14 @@ const JELLY = "328731272497201154";
 
 client.on('ready', ready => {
   console.log("ready");
-  console.log("!bonkers ban ashton to ban ashton");
-  client.user.setActivity('bonbi bonkers', { type: 'LISTENING' });
+  console.log("!bonkers ban ashton");
+  client.user.setActivity('bonnie bonkers', { type: 'LISTENING' });
 });
 
 client.on('message', message => {
   if (message.author.bot) return;
-  if (message.content.startsWith(`${PREFIX}ashton`)) {
-    message.channel.send("he is gay");
+  if (message.content.startsWith(`${PREFIX}jelly`)) {
+    message.channel.send("he is fake based");
   } else if (message.author.id === JELLY) {
 	  console.log("jelly sent a message");
   } else if (message.content.startsWith(`${PREFIX}ban ashton`)) {

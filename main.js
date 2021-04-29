@@ -32,7 +32,7 @@ client.on('message', message => {
   } else if (message.content.startsWith(`${PREFIX}tiktok`)) {
 	  message.channel.send("https://www.tiktok.com/@bonbibonkers");
   } else if (message.content.startsWith(`${PREFIX}based`)) {
-	  message.channel.send("");
+	  message.channel.send("http://4chan.org/board/pol/catalog");
 });
 
 client.login(TOKEN);

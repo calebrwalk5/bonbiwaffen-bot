@@ -38,6 +38,9 @@ client.on('message', message => {
 	  	message.channel.send("https://bitwave.tv/codcomedytj247");
 		message.channel.send("xD");
 	  }
+  } else {
+  	return;
+  } 
 });
 
 client.login(TOKEN);
